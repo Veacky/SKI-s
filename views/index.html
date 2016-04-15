@@ -1,0 +1,49 @@
+<!-- SUGGESTIONS -->
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header full">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>SKI's</h1>
+						                  <hr class="tall">
+                        <span class="subheading">Decouvrez les skis dans toutes leurs largeurs.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-links">
+                      <a href="categories.php"><button type="button" class="btn btn-primary">Consulter par categorie</button></a>
+                      <a href="brands.php"><button type="button" class="btn btn-primary">Consulter par marque</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sub-container">
+      <div class="row content-title">
+        <h2>La suggestion du chef :</2>
+      </div>
+      <div class="row products">
+        {foreach from=$suggest item=s}
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail product">
+              <!-- <img class="product-image" src="img/..." alt="Image du ski"> -->
+              <div class="caption">
+                <h3>{$s.model} <small><span class="glyphicon glyphicon-minus"></span> {$s.brand}</small></h3>
+                <p>Description du ski</p>
+                <p class="price inline"><b>{$s.price}€</b></p>
+                <p class="boutons inline">
+                  <a href="product.php?id={$s.id_ski}" class="btn btn-default pull-right" role="button"><span class="glyphicon glyphicon-menu-right"></span> Consulter</a>
+                  <a href="#" title="Ajouter aux favoris" class="btn btn-default pull-right" role="button"><span class="glyphicon glyphicon-star-empty"></span></a>
+                </p>
+            </div>
+          </div>
+        </div>
+      {/foreach}
+    </div>
+  </div>

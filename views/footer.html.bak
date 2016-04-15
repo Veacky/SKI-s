@@ -1,0 +1,16 @@
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<hr class="tall">
+                    <p class="copyright text-muted">Copyleft &copy; SKI's 2016</p>
+                </div>
+            </div>
+        </div>
+</footer>
+	
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</html>

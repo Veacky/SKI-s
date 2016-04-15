@@ -1,0 +1,220 @@
+
+/* --- GENERAL --- */
+
+.container{
+  padding-top: 50px;
+}
+
+.content-title{
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.sub-container{
+  margin-left:3%;
+  margin-right:3%;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+.b{
+  color: #337AB7;
+}
+
+
+/* --- NAVBARRE --- */
+
+.navbar{
+  background-color: rgba(0,0,0,1);
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #DDD;
+}
+
+.navbar-default .navbar-nav li a{
+  color:white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar-default .navbar-nav li a:hover{
+  color:#DDD;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #337AB7;
+}
+
+/* --- FOOTER --- */
+
+.copyright{
+  text-align: center;
+}
+footer .icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #337AB7;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+
+/* --- INDEX --- */
+
+.full {
+    background: url('../img/bg-index.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.site-heading{
+  margin-top: 8vh;
+  margin-bottom: 5%;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 15px #000000;
+}
+
+.site-heading h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subheading{
+  font-size: 20px;
+}
+
+.site-links{
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.site-links button{
+  padding: 15px 5% 15px 5%;
+  margin-top: 1vh;
+  background-color: rgba(0,0,0,0.5);
+  border-color: white;
+  transition: 0.3s;
+  min-width: 175px;
+}
+
+.site-links button:hover, .site-links button:focus{
+  background-color: rgba(0,0,0,0.7);
+  border-color: white;
+}
+
+.site-links .btn:active{
+  background-color: rgba(0,0,0,0.7);
+  border-color: white;
+}
+
+@media (min-width:758px) {
+    .site-links button{
+        width:250px;
+        padding: 15px 20px 15px 20px;
+    }
+}
+
+
+
+/* --- AFFICHAGE DES PRODUITS --- */
+
+
+.thumbnail.cat-choice, .thumbnail.brand-choice{
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail.cat-choice{
+  min-height: 250px;
+}
+
+.thumbnail.brand-choice:hover, .thumbnail.cat-choice:hover{
+  background-color: #d4d4d4;
+}
+
+.thumbnail.brand-choice:hover, .thumbnail.cat-choice:hover{
+  box-shadow: #337AB7;
+}
+
+.thumbnail.cat-choice .caption{
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  position:absolute;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  border-top: solid 1px #DDD;
+}
+
+.thumbnail.cat-choice .caption h3, .thumbnail.brand-choice .caption h3{
+  margin-top: 5px;
+  text-align: center;
+}
+
+.thumbnail.brand-choice img{
+  max-height: 100px;
+  width: auto;
+}
+
+
+.isUp{
+  bottom: 0px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.isDown{
+}
+
+
+
+
+.products .thumbnail{
+  border-radius: 0px;
+  box-shadow: 0px 0px 8px -2px;
+}
+
+.product .glyphicon{
+  color: #337AB7;
+}
+
+.product a.btn.btn-default.pull-right{
+  position: relative;
+  bottom: 12px;
+}
+
+.inline{
+  display: inline;
+}
+
+.isFav{
+
+}

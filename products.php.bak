@@ -1,0 +1,17 @@
+<?php
+require "db.php";
+
+$porducts = [];
+
+if(isset($_GET["name_brand"])){
+	$id_offre = $_GET["name_brand"];
+
+	$query = "SELECT * FROM skis WHERE brand = ".$name_brand;
+	$result = pg_query($query);
+	$row = pg_fetch_assoc($result);
+	$info["name"] = $row["name"];
+	$info["desc"] = $row["desc"];
+	$info["price"] = $row["price"];
+}
+
+echo json_encode($info);

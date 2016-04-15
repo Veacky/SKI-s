@@ -1,0 +1,15 @@
+<?php
+require_once('smarty-master/libs/Smarty.class.php');
+require_once('db.php');
+
+$smarty = new Smarty();
+$smarty->template_dir = 'views';
+$smarty->compile_dir = 'tmp';
+
+
+//derniere ligne :
+$smarty->display('header.html');
+$smarty->display('index.html');
+$smarty->display('footer.html');
+
+
