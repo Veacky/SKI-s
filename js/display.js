@@ -22,22 +22,23 @@ $(document).ready(function(){
     else if (scroll > 50) {
       $(".navbar").css("background-color", "rgba(0,0,0,0.5)");
     }
-});
+  });
+
 
 
   //div slide from bottom on hover the parent
-  $('.cat-choice').mouseleave(function() {
-    var caption = "#" + $(this).attr('id') + " .caption";
-    var hauteur = $(caption).height() - $(caption + " h3").height();
-    $(caption).addClass('isDown', 1000, 'easeOutBounce');
-    $(caption).removeClass('isUp');
-  });
-  $('.cat-choice').mouseenter(function() {
-    var caption = "#" + $(this).attr('id') + " .caption";
-    var hauteur = $(caption).height() - $(caption + " h3").height();
-    $(caption).addClass('isUp', 1000, 'easeOutBounce');
-    $(caption).removeClass('isDown');
-  });
+$('.cat-choice').mouseleave(function() {
+  var caption = "#" + $(this).attr('id') + " .caption";
+  var hauteur = $(caption).height() - $(caption + " h3").height();
+  $(caption).addClass('isDown', 1000, 'easeOutBounce');
+  $(caption).removeClass('isUp');
+});
+$('.cat-choice').mouseenter(function() {
+  var caption = "#" + $(this).attr('id') + " .caption";
+  var hauteur = $(caption).height() - $(caption + " h3").height();
+  $(caption).addClass('isUp', 1000, 'easeOutBounce');
+  $(caption).removeClass('isDown');
+});
 
 });
 

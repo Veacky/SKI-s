@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30-dev/59, created on 2016-04-15 10:44:08
+/* Smarty version 3.1.30-dev/59, created on 2016-04-18 16:56:24
   from "/home/domeconnection/public_html/valerian/views/brands.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30-dev/59',
-  'unifunc' => 'content_5710fe3826cff1_96808475',
+  'unifunc' => 'content_571549f8469fd7_96830639',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6cd3b267d07dfed38e1ae26446926f63afbd022' => 
     array (
       0 => '/home/domeconnection/public_html/valerian/views/brands.html',
-      1 => 1460731443,
+      1 => 1461012982,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5710fe3826cff1_96808475 (Smarty_Internal_Template $_smarty_tpl) {
+function content_571549f8469fd7_96830639 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-<div class="container">
+<div class="container top">
 	<div class="row">
-		<div class="col-md-12 col-md-offset-0">
+		<div class="col-sm-12">
 			<h4>Cliquez sur une marques pour en afficher les skis :</h4>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row-centered">
 		<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['brands']->value, 'brand');
 foreach ($_from as $_smarty_tpl->tpl_vars['brand']->value) {
 $_smarty_tpl->tpl_vars['brand']->_loop = true;
 $__foreach_brand_0_saved = $_smarty_tpl->tpl_vars['brand'];
 ?>
-			<div class="col-md-2">
+			<div class="col-xs-4 col-sm-3 col-md-2">
 				<div class="thumbnail brand-choice" id="<?php echo $_smarty_tpl->tpl_vars['brand']->value['brand'];?>
 ">
 				  <img src="img/brand/<?php echo $_smarty_tpl->tpl_vars['brand']->value['brand'];?>
@@ -58,12 +58,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-sm-8 col-sm-offset-2">
 			<hr class="tall">
 		</div>
 	</div>
 
-	<div class="sub-container">
+	<div class="container products">
 		  <!-- ici est ajouter l'affichage des produits depuis le JS -->
 	</div>
 <?php }

@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container top">
 	<div class="row">
-		<div class="col-md-12 col-md-offset-0">
+		<div class="col-sm-12">
 			<h4>Cliquez sur une categorie pour en afficher les skis :</h4>
 		</div>
 	</div>
 	<div class="row">
 		{foreach from=$categories item=cat}
-			<div class="col-md-2">
+			<div class="col-sm-2">
 				<div class="thumbnail cat-choice btn-default" id="{$cat.name}">
 				  <!-- <img src="img/{$cat.name}" alt="{$cat.name}"> -->
 				  <div class="caption">
@@ -19,12 +19,12 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-sm-8 col-sm-offset-2">
 			<hr class="tall">
 		</div>
 	</div>
 </div>
 
-	<div class="sub-container">
+	<div class="container products">
 		  <!-- ici est ajouter l'affichage des produits depuis le JS -->
 	</div>

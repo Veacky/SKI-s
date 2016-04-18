@@ -1,7 +1,7 @@
 
 /* --- GENERAL --- */
 
-.container{
+.container.top{
   padding-top: 50px;
 }
 
@@ -160,20 +160,18 @@ footer .icon-bar{
 
 .thumbnail.brand-choice:hover, .thumbnail.cat-choice:hover{
   background-color: #d4d4d4;
-}
-
-.thumbnail.brand-choice:hover, .thumbnail.cat-choice:hover{
   box-shadow: #337AB7;
 }
 
 .thumbnail.cat-choice .caption{
-  width: auto;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   position:absolute;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
   border-top: solid 1px #DDD;
 }
+
 
 .thumbnail.cat-choice .caption h3, .thumbnail.brand-choice .caption h3{
   margin-top: 5px;
@@ -206,7 +204,7 @@ footer .icon-bar{
   color: #337AB7;
 }
 
-.product a.btn.btn-default.pull-right{
+.product a.btn.btn-default.pull-right, .product button.btn.btn-default.pull-right{
   position: relative;
   bottom: 12px;
 }
@@ -215,6 +213,74 @@ footer .icon-bar{
   display: inline;
 }
 
-.isFav{
 
+
+
+
+
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+[class*="col-centered-"] {
+    display: block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/* Default BS breakpoints */
+@media (min-width: 768px) {
+  .col-centered-sm {
+    display: inline-block
+  }
+}
+
+@media (min-width: 992px) {
+  .col-centered-md {
+    display: inline-block
+  }
+}
+
+
+
+/* --- AFFICHAGE DES SKIS --- */
+
+.product .glyphicon{
+  color: #337AB7;
+}
+
+h2.model, h2.brand{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.img-skis{
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  max-width: 300px;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.product .details{
+  text-align: justify;
+}
+
+span.price{
+  padding: 5px;
+  background-color: #337AB7;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.need-margTop-plz{
+  margin-top: 20px;
 }

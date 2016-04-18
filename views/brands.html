@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container top">
 	<div class="row">
-		<div class="col-md-12 col-md-offset-0">
+		<div class="col-sm-12">
 			<h4>Cliquez sur une marques pour en afficher les skis :</h4>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row-centered">
 		{foreach from=$brands item=brand}
-			<div class="col-md-2">
+			<div class="col-centered-sm col-xs-4 col-sm-3 col-md-3">
 				<div class="thumbnail brand-choice" id="{$brand.brand}">
 				  <img src="img/brand/{$brand.brand}.jpg" alt="Logo {$brand.brand}">
 				  <div class="caption">
@@ -21,11 +21,11 @@
 
 
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-sm-8 col-sm-offset-2">
 			<hr class="tall">
 		</div>
 	</div>
 
-	<div class="sub-container">
+	<div class="container products">
 		  <!-- ici est ajouter l'affichage des produits depuis le JS -->
 	</div>
